@@ -4,6 +4,10 @@ lit-NER
 
 Streamlit demo for HuggingFace NER models
 
+.. image:: docs/demo.jpg
+  :width: 200
+  :alt: Demo view
+
 *****
 Requirements
 *****
