@@ -1,0 +1,5 @@
+MISC
+PER
+ORG
+LOC
+O
