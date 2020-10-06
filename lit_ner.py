@@ -4,7 +4,7 @@ import streamlit as st
 from spacy import displacy
 
 import httpx
-from utils import hf_ents_to_displacy_format, make_color_palette
+from lit_ner.utils import hf_ents_to_displacy_format, make_color_palette
 from httpx import HTTPError
 import random
 
@@ -35,7 +35,7 @@ client = httpx.Client(timeout=1000, event_hooks={"response": [raise_on_not200]})
 
 @st.cache(allow_output_mutation=True)
 def get_colormap():
-    with open("./lit_ner/labels.txt", "r") as f:
+    with open("./examples/labels.txt", "r") as f:
         labels = f.read().splitlines()
     color_map = make_color_palette(labels)
     return color_map
