@@ -112,7 +112,10 @@ class TransformersClassifierHandler(BaseHandler, ABC):
             text = d.get("data")
             if text is None:
                 text = d.get("body")
-            sentence = text.decode("utf-8")
+            if isinstance(text, (bytes, bytearray)):
+                sentence = text.decode("utf-8")
+            else:
+                sentence = text
             logger.info("Received text: '%s'", sentence)
 
             # Modify this with your preprocessing
