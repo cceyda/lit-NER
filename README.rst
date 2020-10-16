@@ -4,6 +4,10 @@ lit-NER
 
 Streamlit demo for HuggingFace NER models
 
+Public demo_
+
+.. _demo: https://share.streamlit.io/cceyda/lit-ner/public/lit_ner.py
+
 .. image:: docs/demo.jpg
   :width: 200
   :alt: Demo view
