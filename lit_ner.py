@@ -22,6 +22,8 @@ if not LOCAL:
     API_URL = st.sidebar.text_input("API URL", API_URL)
     MODEL_NAME = st.sidebar.text_input("MODEL NAME", MODEL_NAME)
     st.sidebar.markdown("Related blog [post](https://cceyda.github.io/blog/huggingface/torchserve/streamlit/ner/2020/10/09/huggingface_streamlit_serve.html)")
+    st.sidebar.caption("Made by [Ceyda Cinarel](https://linktr.ee/ceydai)")
+    st.sidebar.markdown("See [Code](https://github.com/cceyda/lit-NER)")
     st.write(f"API endpoint: {API_URL}{MODEL_NAME}")
 
 
